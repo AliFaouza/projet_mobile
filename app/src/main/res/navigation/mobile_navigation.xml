@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_factures"
+        android:name="com.example.comofood.ui.facture.factureFragment"
+        android:label="@string/menu_facture"
+        tools:layout="@layout/facture_fragment" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.comofood.ui.contact.contactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/contact_fragment" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.comofood.ui.Plats.platsFragment"
+        android:label="@string/menu_plats"
+        tools:layout="@layout/fragment_plats" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.comofood.ui.meilleur_plats.meilleurFragment"
+        android:label="@string/menu_meilleur"
+        tools:layout="@layout/fragment_meilleurplats" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.comofood.ui.Tarifs.tarisFragment"
+        android:label="@string/menu_tarif"
+        tools:layout="@layout/fragment_tarif" />
+</navigation>
